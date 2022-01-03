@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *
 {
 	font-family:'Poppins', sans-serif;
 }
-body
+body 
 {
-    background:#ffffff;
-}  
+    background-image: linear-gradient(to right, #051D36, #12365D, #051D36);
+}
 #particles-js {
     width:99.5%;
     height:99vh;       
@@ -54,7 +55,14 @@ section
 }
 h2
 {
-	position:relative
+	position:relative;
+	color: #fff;
+	font-weight: 500;
+}
+h2 img
+{
+	width: 182.67px;
+    padding-right: 15px;
 }
 hr
 {
@@ -68,6 +76,43 @@ footer
 	align-items:center;
 	position:relative;
 	padding-top:40px;
+}
+footer p
+{
+	color: #fff;
+	padding: 0 10px 0 5px;
+	font-weight: 200;
+}
+footer a
+{
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none;
+}
+footer a:hover
+{
+	color: #DE359A;
+}
+@media only screen and (max-width: 1366px)
+{
+	#particles-js 
+	{
+    width: 98.5%;
+    height: 98vh;
+	}
+	header 
+	{
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+	section 
+	{
+		padding-bottom: 85px;
+	}
+	footer 
+	{
+		padding-top: 20px;
+	}
 }
 @media only screen and (max-width: 600px)
 {
@@ -83,20 +128,5 @@ footer
 	footer
 	{
 		padding-top:30px;
-	}
-}
-@media only screen and (max-width: 400px)
-{
-	section .btn
-	{		 
-		padding:10px 50px 90px;
-	}
-	footer
-	{
-		flex-direction:column;
-	}
-	footer .btn3
-	{
-		margin-bottom:15px;
 	}
 }
